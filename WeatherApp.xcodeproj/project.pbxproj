@@ -14,6 +14,9 @@
 		F5B223D61A84407C00EABB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B223D51A84407C00EABB0A /* Images.xcassets */; };
 		F5B223D91A84407C00EABB0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B223D71A84407C00EABB0A /* LaunchScreen.xib */; };
 		F5B223E51A84407C00EABB0A /* WeatherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B223E41A84407C00EABB0A /* WeatherAppTests.m */; };
+		F5B223EF1A8443B600EABB0A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B223EE1A8443B600EABB0A /* CoreLocation.framework */; };
+		F5B223F11A8443BB00EABB0A /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B223F01A8443BB00EABB0A /* Twitter.framework */; };
+		F5B223F51A84448800EABB0A /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B223F41A84448800EABB0A /* WeatherData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		F5B223DE1A84407C00EABB0A /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B223E31A84407C00EABB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B223E41A84407C00EABB0A /* WeatherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherAppTests.m; sourceTree = "<group>"; };
+		F5B223EE1A8443B600EABB0A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F5B223F01A8443BB00EABB0A /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		F5B223F31A84448800EABB0A /* WeatherData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherData.h; sourceTree = "<group>"; };
+		F5B223F41A84448800EABB0A /* WeatherData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B223F11A8443BB00EABB0A /* Twitter.framework in Frameworks */,
+				F5B223EF1A8443B600EABB0A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		F5B223BC1A84407C00EABB0A = {
 			isa = PBXGroup;
 			children = (
+				F5B223F21A8443C600EABB0A /* Frameworks */,
 				F5B223C71A84407C00EABB0A /* WeatherApp */,
 				F5B223E11A84407C00EABB0A /* WeatherAppTests */,
 				F5B223C61A84407C00EABB0A /* Products */,
@@ -81,6 +91,8 @@
 		F5B223C71A84407C00EABB0A /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				F5B223F31A84448800EABB0A /* WeatherData.h */,
+				F5B223F41A84448800EABB0A /* WeatherData.m */,
 				F5B223CC1A84407C00EABB0A /* AppDelegate.h */,
 				F5B223CD1A84407C00EABB0A /* AppDelegate.m */,
 				F5B223CF1A84407C00EABB0A /* ViewController.h */,
@@ -117,6 +129,15 @@
 				F5B223E31A84407C00EABB0A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5B223F21A8443C600EABB0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B223F01A8443BB00EABB0A /* Twitter.framework */,
+				F5B223EE1A8443B600EABB0A /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +242,7 @@
 			files = (
 				F5B223D11A84407C00EABB0A /* ViewController.m in Sources */,
 				F5B223CE1A84407C00EABB0A /* AppDelegate.m in Sources */,
+				F5B223F51A84448800EABB0A /* WeatherData.m in Sources */,
 				F5B223CB1A84407C00EABB0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
