@@ -40,7 +40,7 @@
         if (err) {
             NSLog(@"%@",[err localizedFailureReason]);
         }else{
-            //Update are UI
+            //Update our UI
             data = weatherData;
             self.tempLabel.text = [weatherData objectForKey:@"temp"];
             self.conditionLabel.text = [weatherData objectForKey:@"remark"];
